@@ -36,7 +36,7 @@ if __name__ == '__main__':
     print("\n- TEST #3:\n")
 
     response = client.request(
-        'DemoRPCService.GetPerson',
+        'DemoRPCService.ReadPerson',
         id=a_person.id
     )
     person_clone = Person(response)

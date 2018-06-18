@@ -38,9 +38,9 @@ func (s *DemoRPCService) CreatePerson(r *http.Request, args *CreatePersonArgs, r
 	return nil
 }
 
-// GetPerson returns the Person matching the given args.ID, if present, or an error otherwise
-func (s *DemoRPCService) GetPerson(r *http.Request, args *GetPersonArgs, reply *Person) error {
-	log.Printf("got GetPerson request from %s\n", r.RemoteAddr)
+// ReadPerson returns the Person matching the given args.ID, if present, or an error otherwise
+func (s *DemoRPCService) ReadPerson(r *http.Request, args *ReadPersonArgs, reply *Person) error {
+	log.Printf("got ReadPerson request from %s\n", r.RemoteAddr)
 
 	person, personExists := s.personList[args.ID]
 	if !personExists {
@@ -58,7 +58,7 @@ type CreatePersonArgs struct {
 	Age     uint   `json:"age"`
 }
 
-// GetPersonArgs contains all the parameters used in the GetPerson method
-type GetPersonArgs struct {
+// ReadPersonArgs contains all the parameters used in the ReadPerson method
+type ReadPersonArgs struct {
 	ID string `json:"id"`
 }
