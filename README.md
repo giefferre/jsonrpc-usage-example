@@ -1,5 +1,7 @@
 # JSON-RPC Usage Example
 
+[![Go Report Card](https://goreportcard.com/badge/github.com/giefferre/jsonrpc-usage-example)](https://goreportcard.com/report/github.com/giefferre/jsonrpc-usage-example) [![Updates](https://pyup.io/repos/github/giefferre/jsonrpc-usage-example/shield.svg)](https://pyup.io/repos/github/giefferre/jsonrpc-usage-example/) [![Python 3](https://pyup.io/repos/github/giefferre/jsonrpc-usage-example/python-3-shield.svg)](https://pyup.io/repos/github/giefferre/jsonrpc-usage-example/)
+
 A simple client-server architecture showing how JSON-RPC 2.0 works.
 
 Contains:
